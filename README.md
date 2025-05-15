@@ -58,7 +58,10 @@ Proyek ini bertujuan membangun model Machine Learning untuk deteksi anomali, men
   curl http://localhost:8080
   ```
 
-  dan mendapat respons `Anomaly Detection API is running!`.
+  dan mendapat respons `Anomaly Detection API is running!` seperti gambar dibawah ini.
+
+  ![image](https://github.com/user-attachments/assets/5498b0bb-275c-4d4c-ad59-961b92c70d00)
+
 
 ### f. Testing Akses API dari Browser
 
