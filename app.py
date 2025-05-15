@@ -11,11 +11,15 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    data = request.get_json()
-    df = pd.DataFrame(data)
-    pred = model.predict(df)
-    result = [1 if i == -1 else 0 for i in pred]
-    return jsonify({"prediction": result})
+    try:
+        data = request.get_json()
+        df = pd.DataFrame(data)
+        print("Received data columns:", df.columns.tolist()) 
+        pred = model.predict(df)
+        result = [1 if i == -1 else 0 for i in pred]
+        return jsonify({"prediction": result})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=8080)
