@@ -87,11 +87,11 @@ Proyek ini bertujuan membangun model Machine Learning untuk deteksi anomali, men
 
   ![Screenshot 2025-05-15 140611 - Copy](https://github.com/user-attachments/assets/ceb9755b-9623-42c7-8d90-54d1e0870a5d)
 
-  Keterangan:
+  **Keterangan:
 
   Nilai 0 berarti data dianggap normal.
   
-  Nilai 1 berarti data dianggap anomaly
+  Nilai 1 berarti data dianggap anomaly**
 
 
 ### f. Testing Akses API dari Browser
