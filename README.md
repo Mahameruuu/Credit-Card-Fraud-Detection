@@ -79,14 +79,3 @@ Proyek ini bertujuan membangun model Machine Learning untuk deteksi anomali, men
 * Deploy berjalan tanpa harus menggunakan Google Cloud Registry atau layanan cloud lain, cukup menggunakan VM yang sudah disediakan.
 
 ---
-
-## 4. Catatan dan Saran
-
-* Pastikan firewall dan security group di VM mengizinkan akses ke port 8080.
-* Jika ingin deploy ke cloud registry atau Kubernetes, bisa dilakukan tahap berikutnya.
-* Dokumentasi ini bisa dikembangkan lagi sesuai kebutuhan.
-
----
-
-Kalau mau, aku bisa buatkan versi file `.md` (Markdown) yang siap kamu upload atau lampirkan. Mau?
-	
