@@ -60,7 +60,11 @@ Proyek ini bertujuan membangun model Machine Learning untuk deteksi anomali, men
 
   dan mendapat respons `Anomaly Detection API is running!` seperti gambar dibawah ini.
 
-  ![Screenshot 2025-05-15 140611](https://github.com/user-attachments/assets/c7c7076e-b9cd-4d53-95e3-eede136907d2)
+  ![Screenshot 2025-05-15 140611](https://github.com/user-attachments/assets/7c651469-105c-4f86-aa2a-de0298a3c6c8)
+
+* Melakukan tes endpoint "predict/" seperti gambar dibawah ini
+
+  ![Screenshot 2025-05-15 140611 - Copy](https://github.com/user-attachments/assets/ceb9755b-9623-42c7-8d90-54d1e0870a5d)
 
 
 ### f. Testing Akses API dari Browser
