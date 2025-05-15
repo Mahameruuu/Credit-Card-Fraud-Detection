@@ -1,6 +1,6 @@
 ---
 
-# Dokumentasi Proyek Deploy Model Anomaly Detection dengan Docker
+# 🧪 Dokumentasi Proyek Deploy Model Anomaly Detection dengan Docker
 
 ## 1. Overview
 
@@ -62,9 +62,36 @@ Proyek ini bertujuan membangun model Machine Learning untuk deteksi anomali, men
 
   ![Screenshot 2025-05-15 140611](https://github.com/user-attachments/assets/7c651469-105c-4f86-aa2a-de0298a3c6c8)
 
-* Melakukan tes endpoint "predict/" seperti gambar dibawah ini
+* Melakukan tes endpoint "predict/"
+
+  - Gunakan perintah curl berikut untuk menguji endpoint prediksi:
+
+  ```
+  curl -X POST http://localhost:8080/predict \
+  -H "Content-Type: application/json" \
+  -d '[{
+    "Time": 100, "V1": 0.1, "V2": 0.2, "V3": 0.3, "V4": 0.4, "V5": 0.5,
+    "V6": 0.6, "V7": 0.7, "V8": 0.8, "V9": 0.9, "V10": 1.0, "V11": 1.1,
+    "V12": 1.2, "V13": 1.3, "V14": 1.4, "V15": 1.5, "V16": 1.6, "V17": 1.7,
+    "V18": 1.8, "V19": 1.9, "V20": 2.0, "V21": 2.1, "V22": 2.2, "V23": 2.3,
+    "V24": 2.4, "V25": 2.5, "V26": 2.6, "V27": 2.7, "V28": 2.8,
+    "Amount": 1000
+  }]'
+
+  ```
+  - Hasil
+
+    ```
+    {"prediction": [0]}
+    ```
 
   ![Screenshot 2025-05-15 140611 - Copy](https://github.com/user-attachments/assets/ceb9755b-9623-42c7-8d90-54d1e0870a5d)
+
+  Keterangan:
+
+  Nilai 0 berarti data dianggap normal.
+  
+  Nilai 1 berarti data dianggap anomaly
 
 
 ### f. Testing Akses API dari Browser
